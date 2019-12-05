@@ -1,0 +1,22 @@
+<!--pages/profile/profile.wxml-->
+<view class="top">
+    <view wx:if="{{userInfo.avatarUrl}}" class="user-info-me">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" />
+        <view class="nickname">{{userInfo.nickName}}</view>
+    </view>
+    <view wx:else class="user-info-deafult">
+        <image class="default-head" src="/images/user.png" />
+        <button open-type="getUserInfo" bind:getuserinfo="handleGetUserInfo" class="user-btn">点击头像登录</button>
+    </view>
+</view>
+<view class="func-list">
+    <view class="func-item"
+          wx:for="{{profileList}}"
+          wx:key="index">
+        <view class="info">
+            <image src="{{item.img}}" />
+            <view class="info-name">{{item.name}}</view>
+        </view>
+        <image class="enter" src="/icons/profile/enter.png" />
+    </view>
+</view>

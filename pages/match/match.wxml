@@ -1,0 +1,23 @@
+<view class="fixedtab">
+    <j-game-tab gameCate="{{gameCate}}"
+                bind:tabClick="handleTabClick" />
+
+
+    <j-select-tab tabCate="{{tabCate}}"
+                  bind:jSelectClick="jSelectClick" />
+</view>
+
+
+<scroll-view class="match-list">
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+    <j-match-item matchInfo="{{matchInfo}}"/>
+</scroll-view>
+
+

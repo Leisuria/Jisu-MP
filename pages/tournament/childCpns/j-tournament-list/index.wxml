@@ -1,0 +1,18 @@
+<!-- pages/tournament/childCpns/j-tournament-list/index.wxml -->
+<view class="tournament-list">
+    <view class="tournament"
+          wx:for="{{leagueInfo}}"
+          wx:key="index">
+        <view class="left-info">
+            <image src="{{item.img}}" />
+            <view class="info">
+                <view class="name">{{item.name}}</view>
+                <view class="time">{{item.time}}</view>
+            </view>
+        </view>
+        <view class="right-info">
+            <view class="state">{{item.state}}</view>
+            <view class="desc">{{item.desc}}</view>
+        </view>
+    </view>
+</view>

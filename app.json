@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/match/match",
+    "pages/tournament/tournament",
+    "pages/team/team",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F7F8FA",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#A7ACC7",
+    "selectedColor": "#4981F2",
+    "list": [
+      {
+        "pagePath": "pages/match/match",
+        "text": "比赛",
+        "iconPath": "/icons/tabbar/match.png",
+        "selectedIconPath": "/icons/tabbar/match_active.png"
+      },
+      {
+        "pagePath": "pages/tournament/tournament",
+        "text": "联赛",
+        "iconPath": "/icons/tabbar/tournament.png",
+        "selectedIconPath": "/icons/tabbar/tournament_active.png"
+      },
+      {
+        "pagePath": "pages/team/team",
+        "text": "战队",
+        "iconPath": "/icons/tabbar/team.png",
+        "selectedIconPath": "/icons/tabbar/team_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/icons/tabbar/profile.png",
+        "selectedIconPath": "/icons/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,10 @@
+<!--component/j-tag-bar/index.wxml-->
+<scroll-view class="tag-bar" scroll-x>
+    <view wx:for="{{tagInfo}}"
+          wx:key="index" 
+          class="tag {{currentIndex == index ? 'active' : ''}}"
+          bind:tap="handleItemClick"
+          data-index="{{index}}">
+        {{item}}
+    </view>
+</scroll-view>

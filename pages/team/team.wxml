@@ -1,0 +1,16 @@
+<!--pages/team/team.wxml-->
+<j-select-tab class="tabbar" 
+              tabCate="{{tabCate}}" 
+              bind:jSelectClick="jSelectClick" />
+<view class="container">
+    <view class="table">
+        <view class="title">
+            <view class="title-rank">排名</view>
+            <view class="title-change"> </view>
+            <view class="title-team">战队</view>
+            <view class="title-region">国家/地区</view>
+            <view class="title-score">积分</view>
+        </view>
+        <j-team-list teamRankInfo="{{teamRankInfo}}" />
+    </view>
+</view>

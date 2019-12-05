@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "j-select-tab": "/component/j-select-tab/index",
+    "j-tag-bar": "/component/j-tag-bar/index",
+    "j-tournament-list": "./childCpns/j-tournament-list/index"
+  },
+  "navigationBarTitleText": "联赛"
+}

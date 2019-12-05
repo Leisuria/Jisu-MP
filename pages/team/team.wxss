@@ -1,0 +1,41 @@
+.tabbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.container {
+  position: relative;
+  margin-top: 72rpx;
+  overflow: hidden;
+  width: 100%;
+}
+.container .table {
+  width: 100%;
+}
+.container .table .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+  border-bottom: 1rpx solid var(--lineColor);
+  font-size: 20rpx;
+  color: var(--thirdText);
+  text-align: center;
+  padding: 0 16rpx;
+}
+.container .table .title .title-rank {
+  flex: 1;
+}
+.container .table .title .title-change {
+  flex: 1;
+}
+.container .table .title .title-team {
+  flex: 4;
+  text-align: left;
+}
+.container .table .title .title-region {
+  flex: 3;
+}
+.container .table .title .title-score {
+  flex: 1;
+}

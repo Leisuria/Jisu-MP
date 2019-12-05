@@ -1,0 +1,23 @@
+/* component/j-tag-bar/index.wxss */
+.tag-bar{
+    width: 100%;
+    white-space:nowrap;
+}
+
+.tag{
+    display: inline-block;
+    margin-right: 16rpx;
+    border-radius: 4rpx;
+    font-size: 24rpx;
+    padding: 8rpx 16rpx;
+    background-color: var(--bgColor);
+    color: var(--thirdText);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.active{
+    background-color: var(--themeColor);
+    color: var(--lightText);
+}
+

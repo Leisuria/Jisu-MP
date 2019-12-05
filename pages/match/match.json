@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "j-select-tab": "/component/j-select-tab/index",
+    "j-match-item": "/component/j-match-item/index",
+    "j-game-tab": "./childCpns/j-game-tab/index"
+  },
+  "navigationBarTitleText": "比赛"
+}

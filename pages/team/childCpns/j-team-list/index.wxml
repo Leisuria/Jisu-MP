@@ -1,0 +1,17 @@
+<!-- pages/team/childCpns/j-team-list/index.wxml -->
+<view class="list">
+    <view class="team-item"
+          wx:for="{{teamRankInfo}}"
+          wx:key="index">
+        <view class="rank">{{item.rank}}</view>
+        <view class="change">{{item.change}}</view>
+        <view class="team">
+            <image class="team-logo" src="{{item.img}}" />
+            <view class="team-name">{{item.team}}</view>
+        </view>
+        <view class="region">
+            <image src="{{item.region}}" />
+        </view>
+        <view class="score">{{item.score}}</view>
+    </view>
+</view>

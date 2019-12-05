@@ -1,0 +1,32 @@
+<view class="match">
+    <view class="detail-top">
+        <view class="left-info">
+            <text class="match-name">{{matchInfo.leagueName}}</text>
+            <text class="match-time">{{matchInfo.time}}</text>
+        </view>
+        <view class="match-state">{{matchInfo.state}}</view>
+        <view class="match-audience"><image src="/icons/match/audience.png" />{{matchInfo.audience}}</view>
+    </view>
+    <view class="detail-middle">
+        <view class="follow"><image class="follow-icon" src="/icons/match/follow.png" /> </view>
+        <view class="match-team">
+            <view class="away-team"><text>{{matchInfo.awayTeam}}</text><image class="team-icon" src="{{matchInfo.teamIcon}}" /></view>
+            <view class="match-score">{{matchInfo.score}}</view>
+            <view class="home-team"><image class="team-icon" src="{{matchInfo.teamIcon}}" /><text>{{matchInfo.homeTeam}}</text></view>
+        </view>
+        <view class="match-state-icon"><image class="state-icon" src="{{matchInfo.stateImg}}" /></view>
+    </view>
+    <view class="detail-bottom">
+        <view class="match-round">{{matchInfo.round}}</view>
+        <view class="score-detail">
+            <view class="left-events events"></view>
+            <view class="round-score">
+                <view class="away-kill kill">2</view>
+                <view class="round-name">全场</view>
+                <view class="home-kill kill">2</view>
+            </view>
+            <view class="right-events events"></view>
+        </view>
+        <view class="space"></view>
+    </view>
+</view>

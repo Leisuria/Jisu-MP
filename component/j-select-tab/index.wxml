@@ -1,0 +1,9 @@
+<view class="select-tab">
+    <view class="tab-item {{currentIndex == index ? 'active' : ''}}"
+          wx:for="{{tabCate}}"
+          wx:key="index"
+          bind:tap="handleItemClick"
+          data-index="{{index}}">
+        <text>{{item}}</text>
+    </view>
+</view>

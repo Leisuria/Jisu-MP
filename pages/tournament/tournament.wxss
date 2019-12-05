@@ -1,0 +1,33 @@
+/* pages/tournament/tournament.wxss */
+.tabbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.container {
+  position: relative;
+  margin-top: 72rpx;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 16rpx;
+}
+.container .search-bar {
+  position: relative;
+  margin: 32rpx 0;
+  padding: 0 24rpx;
+  background-color: var(--bgColor);
+  height: 64rpx;
+  border-radius: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .search-bar image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 16rpx;
+}
+.container .search-bar .input {
+  color: var(--thirdText);
+  font-size: 24rpx;
+}

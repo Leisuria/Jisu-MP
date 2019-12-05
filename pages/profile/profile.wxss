@@ -1,0 +1,77 @@
+/* pages/profile/profile.wxss */
+.top {
+  width: 100%;
+  height: 280rpx;
+  background-color: var(--themeColor);
+  border-bottom: 16rpx solid var(--bgColor);
+  display: flex;
+  justify-content: center;
+}
+.top .user-info-deafult {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  align-items: center;
+}
+.top .user-info-deafult .default-head {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255, 255, 255, 0.5);
+}
+.top .user-info-deafult .user-btn {
+  margin-top: 16rpx;
+  line-height: 1;
+  padding: 16rpx 40rpx;
+  font-size: 24rpx;
+  color: var(--lightText);
+  border-radius: 80rpx;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.top .user-info-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  align-items: center;
+}
+.top .user-info-me .avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255, 255, 255, 0.5);
+}
+.top .user-info-me .nickname {
+  margin-top: 16rpx;
+  line-height: 1;
+  padding: 16rpx 40rpx;
+  font-size: 28rpx;
+  color: var(--lightText);
+}
+.func-list {
+  padding: 0 24rpx;
+}
+.func-list .func-item {
+  height: 112rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.func-list .func-item .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.func-list .func-item .info image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 16rpx;
+}
+.func-list .func-item .info .info-name {
+  font-size: 28rpx;
+  color: var(--firstColor);
+}
+.func-list .func-item .enter {
+  width: 24rpx;
+  height: 24rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "j-select-tab": "/component/j-select-tab/index",
+    "j-team-list": "./childCpns/j-team-list/index"
+  },
+  "navigationBarTitleText": "战队"
+}

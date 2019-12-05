@@ -1,0 +1,23 @@
+
+.select-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 72rpx;
+    background-color: var(--containerColor);
+    border-bottom: 0.5px solid var(--lineColor);
+  }
+  .select-tab .tab-item {
+    flex: 1;
+    font-size: 24rpx;
+    text-align: center;
+    color: var(--thirdText);
+    line-height: 68rpx;
+  }
+  .select-tab .active {
+    color: var(--themeColor);
+    font-weight: 800;
+    border-bottom: 4rpx solid var(--themeColor);
+  }
+  

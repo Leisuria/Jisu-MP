@@ -1,0 +1,9 @@
+.fixedtab{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.match-list{
+    padding-top: 160rpx;
+    background-color: #F7F8FA;
+}

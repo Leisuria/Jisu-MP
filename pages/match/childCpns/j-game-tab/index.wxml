@@ -1,0 +1,9 @@
+<view class="game-tab">
+    <view wx:for="{{gameCate}}" 
+          wx:key="index" 
+          class="game-item {{currentIndex == index ? 'active' : ''}}"
+          bind:tap="handleItemClick"
+          data-index="{{index}}">
+          {{item}}
+    </view>
+</view> 
