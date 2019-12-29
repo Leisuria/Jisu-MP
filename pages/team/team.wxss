@@ -2,17 +2,23 @@
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 .container {
-  position: relative;
-  margin-top: 72rpx;
-  overflow: hidden;
   width: 100%;
+  position: relative;
+  margin-top: 132rpx;
+  height: 100%;
 }
 .container .table {
   width: 100%;
 }
 .container .table .title {
+  position: fixed;
+  margin-top: 72rpx;
+  width: 100%;
+  top: 0;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,6 +28,7 @@
   color: var(--thirdText);
   text-align: center;
   padding: 0 16rpx;
+  background-color: var(--containerColor);
 }
 .container .table .title .title-rank {
   flex: 1;
@@ -30,6 +37,7 @@
   flex: 1;
 }
 .container .table .title .title-team {
+  margin-left: 16rpx;
   flex: 4;
   text-align: left;
 }

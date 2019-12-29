@@ -1,0 +1,227 @@
+var teamrank = [
+  {
+    "name":"TNC Predator",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/d658ac3251866b8aafb1f3736d08ef7b.png",
+    "way":0,
+    "num":0,
+    "score":4850,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/PH.png"
+    },
+    "position":1
+},
+{
+    "name":"Vici Gaming",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/b7720f50843c7c1df412da3f0ed8cf8d.png",
+    "way":0,
+    "num":0,
+    "score":3000,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/CN.png"
+    },
+    "position":2
+},
+{
+    "name":"INVICTUS GAMING",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/99b580f9dac1a1c9b5ed0fd67f0710c8.png",
+    "way":0,
+    "num":0,
+    "score":2240,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/CN.png"
+    },
+    "position":3
+},
+{
+    "name":"Evil Geniuses",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/63e3437c6dbfdb28ea70b01a19b5e812.png",
+    "way":0,
+    "num":0,
+    "score":1350,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/US.png"
+    },
+    "position":4
+},
+{
+    "name":"J.Storm",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/5f185b867fe763ac43cb5d2b1be8bb30.png",
+    "way":0,
+    "num":0,
+    "score":900,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/US.png"
+    },
+    "position":5
+},
+{
+    "name":"Team Liquid",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/5e974fd2e6cc66d5fffc8a3a29b9566e.png",
+    "way":0,
+    "num":0,
+    "score":900,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/EU.png"
+    },
+    "position":5
+},
+{
+    "name":"Alliance",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/7a9c4cc52af94c56d57bb640237f0023.png",
+    "way":0,
+    "num":0,
+    "score":450,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/EU.png"
+    },
+    "position":7
+},
+{
+    "name":"beastcoast",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/15eafb738d4d0ea088c6baba0e5868f5.png",
+    "way":0,
+    "num":0,
+    "score":450,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/US.png"
+    },
+    "position":7
+},
+{
+    "name":"Fighting PandaS",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/dd5ffee7ce925709a6a735611e941644.png",
+    "way":0,
+    "num":0,
+    "score":150,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/US.png"
+    },
+    "position":9
+},
+{
+    "name":"Fnatic",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/2c4864badb4f014df173f3717ff3f41d.png",
+    "way":0,
+    "num":0,
+    "score":150,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/SG.png"
+    },
+    "position":9
+},
+{
+    "name":"Team Aster",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/925c4d123e0bcd4eb23e8269ab731aaa.png",
+    "way":0,
+    "num":0,
+    "score":150,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/CN.png"
+    },
+    "position":9
+},
+{
+    "name":"Adroit",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/79cb40c2cc1e74ecc390085d2e63d96d.png",
+    "way":0,
+    "num":0,
+    "score":100,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/PH.png"
+    },
+    "position":12
+},
+{
+    "name":"Gambit Esports",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/82b6d6e5a2f7f25a8ba7c16ca8133f7c.png",
+    "way":0,
+    "num":0,
+    "score":100,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/RU.png"
+    },
+    "position":12
+},
+{
+    "name":"Team Spirit",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/c5f5eba9f3c584f944d5be8967ab6858.png",
+    "way":0,
+    "num":0,
+    "score":100,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/RU.png"
+    },
+    "position":12
+},
+{
+    "name":"Chaos EC",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/25b9296cf58e8e4e4df1aa65441cba7c.png",
+    "way":0,
+    "num":0,
+    "score":96,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/BR.png"
+    },
+    "position":15
+},
+{
+    "name":"EHOME",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/4c2dcac181be37be6714f9314a2bdb5d.png",
+    "way":0,
+    "num":0,
+    "score":96,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/CN.png"
+    },
+    "position":15
+},
+{
+    "name":"jfshfh178",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/1c28be228b5ac5a33857d3cd06b9a35d.png",
+    "way":0,
+    "num":0,
+    "score":90,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/UA.png"
+    },
+    "position":17
+},
+{
+    "name":"Unknown Team",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/440690ea84fa5b9445225c3b97967b43.png",
+    "way":0,
+    "num":0,
+    "score":64,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/PE.png"
+    },
+    "position":18
+},
+{
+    "name":"Geek Fam",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/fb07a898a55cd6e94f4a46d2e31cf6a5.png",
+    "way":0,
+    "num":0,
+    "score":60,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/MY.png"
+    },
+    "position":19
+},
+{
+    "name":"Ninjas in Pyjamas",
+    "logo":"https://esports-cdn.namitiyu.com/dota/team/1b2cb83d4f65367345ef93ae96eb037a.png",
+    "way":0,
+    "num":0,
+    "score":60,
+    "country":{
+        "logo":"https://static.wanplus.com/data/common/country/SE.png"
+    },
+    "position":19
+}
+
+]
+
+module.exports = {
+  teamrank: teamrank
+}

@@ -1,17 +1,21 @@
 <!-- pages/team/childCpns/j-team-list/index.wxml -->
-<view class="list">
+<scroll-view class="list" scroll-y>
     <view class="team-item"
           wx:for="{{teamRankInfo}}"
           wx:key="index">
-        <view class="rank">{{item.rank}}</view>
-        <view class="change">{{item.change}}</view>
+        <view class="rank">{{item.position}}</view>
+        <view class="change">
+            <view wx:if="{{item.way=='1'}}" class="up"><image src="/icons/team/up.png" /></view>
+            <view wx:elif="{{item.way=='2'}}" class="down"><image src="/icons/team/down.png" /></view>
+            <view wx:else="{{item.way=='0'}}" class="same">-</view>
+        </view>
         <view class="team">
-            <image class="team-logo" src="{{item.img}}" />
-            <view class="team-name">{{item.team}}</view>
+            <image class="team-logo" src="{{item.logo}}" />
+            <view class="team-name">{{item.name}}</view>
         </view>
         <view class="region">
-            <image src="{{item.region}}" />
+            <image mode="aspectFill" src="{{item.country.logo}}" />
         </view>
         <view class="score">{{item.score}}</view>
     </view>
-</view>
+</scroll-view>

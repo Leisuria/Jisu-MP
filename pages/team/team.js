@@ -1,4 +1,10 @@
 // pages/team/team.js
+
+
+var dotarank = require('../../data/dotarank.js')
+var lolrank = require('../../data/lolrank.js')
+var csgorank = require('../../data/csgorank.js')
+
 Page({
 
   /**
@@ -8,47 +14,37 @@ Page({
     tabCate: ['DOTA2','LOL','CS:GO'],
     teamRankInfo : [
       {
-        rank: "0",
-        change: "-",
-        img: "/images/team-cir.png",
-        team: "defult",
-        region: "/images/map.png",
-        score: "0"
-      },
-      {
-        rank: "0",
-        change: "-",
-        img: "/images/team-cir.png",
-        team: "defult",
-        region: "/images/map.png",
-        score: "0"
-      },
-      {
-        rank: "0",
-        change: "-",
-        img: "/images/team-cir.png",
-        team: "defult",
-        region: "/images/map.png",
-        score: "0"
-      },
-      {
-        rank: "0",
-        change: "-",
-        img: "/images/team-cir.png",
-        team: "defult",
-        region: "/images/map.png",
-        score: "0"
+        position: 0,
+        way: "-",
+        logo: "/images/team-cir.png",
+        name: "defult",
+        country: {
+          logo: "/images/map.png"
+        },
+        score: 0,
       }
-    ]
+    ],
+    currentIndex: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      teamRankInfo: dotarank.teamrank
+    })
   },
 
+  jSelectClick(e){
+    console.log(e)
+    const index = e.detail.index
+    this.setData({
+      currentIndex: index
+    })
+    console.log(currentIndex)
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

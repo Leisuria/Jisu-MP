@@ -23,13 +23,13 @@ Component({
     handleItemClick(event) {
       // 1.取出index
       // console.log(event)
-      const index = event.currentTarget.dataset.index
+      var index = event.currentTarget.dataset.index
   
       // 2.修改currentIndex
       this.setData({
         currentIndex: index
       })
-      const data = { index: this.data.currentIndex }
+      var data = { index: this.data.currentIndex }
       // 3.通知页面内部的点击事件
       this.triggerEvent('jSelectClick', data , {})
     }
