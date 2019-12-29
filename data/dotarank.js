@@ -1,7 +1,7 @@
 var teamrank = [
   {
     "name": "Evil Geniuses",
-    "logo": "",
+    "logo": "https://esports-cdn.namitiyu.com/csgo/team/9de0de923a1830ee1726c1336814efe4.png",
     "way": 1,
     "num": 1,
     "score": 906,

@@ -1,24 +1,19 @@
-.tabbar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-.container {
-  width: 100%;
-  position: relative;
-  margin-top: 132rpx;
+page {
   height: 100%;
 }
-.container .table {
+.teampage {
+  height: 100%;
+}
+.teampage .top {
   width: 100%;
 }
-.container .table .title {
-  position: fixed;
-  margin-top: 72rpx;
+.teampage .top .tabbar {
   width: 100%;
-  top: 0;
-  z-index: 10;
+}
+.teampage .top .table {
+  width: 100%;
+}
+.teampage .top .table .title {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,20 +25,24 @@
   padding: 0 16rpx;
   background-color: var(--containerColor);
 }
-.container .table .title .title-rank {
+.teampage .top .table .title .title-rank {
   flex: 1;
 }
-.container .table .title .title-change {
+.teampage .top .table .title .title-change {
   flex: 1;
 }
-.container .table .title .title-team {
+.teampage .top .table .title .title-team {
   margin-left: 16rpx;
   flex: 4;
   text-align: left;
 }
-.container .table .title .title-region {
+.teampage .top .table .title .title-region {
   flex: 3;
 }
-.container .table .title .title-score {
+.teampage .top .table .title .title-score {
   flex: 1;
+}
+.teampage .rank-content {
+  height: calc(100vh - 132rpx);
+  display: flex;
 }

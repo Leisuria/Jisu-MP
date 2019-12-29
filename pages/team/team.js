@@ -1,9 +1,10 @@
 // pages/team/team.js
 
 
-var dotarank = require('../../data/dotarank.js')
-var lolrank = require('../../data/lolrank.js')
-var csgorank = require('../../data/csgorank.js')
+var dota2 = require('../../data/dotarank.js')
+var lol = require('../../data/lolrank.js')
+var csgo = require('../../data/csgorank.js')
+
 
 Page({
 
@@ -24,26 +25,38 @@ Page({
         score: 0,
       }
     ],
-    currentIndex: 0
+    currentGame: 'dota2'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function () {
     this.setData({
-      teamRankInfo: dotarank.teamrank
+      teamRankInfo: dota2.teamrank
     })
   },
 
   jSelectClick(e){
-    console.log(e)
+    // console.log(e)
     const index = e.detail.index
-    this.setData({
-      currentIndex: index
-    })
-    console.log(currentIndex)
-    
+    switch(index){
+      case  0:
+        this.setData({
+          teamRankInfo: dota2.teamrank
+        })
+        break
+      case  1 :
+        this.setData({
+          teamRankInfo: lol.teamrank
+        })
+        break
+      case  2 :
+        this.setData({
+          teamRankInfo: csgo.teamrank
+        })
+        break  
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

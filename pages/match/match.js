@@ -32,7 +32,7 @@ Page({
   handleTabClick(e){
     const index = e.detail.index
     this.setData({
-      currentIndex: index
+      currentGame: index
     })
   },
   jSelectClick(e){

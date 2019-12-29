@@ -27,9 +27,6 @@ Page({
 
   jSelectClick(e){
     const index = e.detail.index
-    this.setData({
-      currentIndex: index
-    })
   },
 
   /**
