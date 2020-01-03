@@ -9,5 +9,5 @@
         <input class="input" value="输入您想查找的比赛" type="text"></input>
     </view>
     <j-tag-bar tagInfo="{{tagInfo}}" />
-    <j-tournament-list leagueInfo="{{leagueInfo}}" />
+    <j-tournament-list eventsInfo="{{eventsInfo}}" />
 </view>

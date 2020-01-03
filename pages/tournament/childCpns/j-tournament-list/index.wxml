@@ -1,18 +1,21 @@
 <!-- pages/tournament/childCpns/j-tournament-list/index.wxml -->
 <view class="tournament-list">
     <view class="tournament"
-          wx:for="{{leagueInfo}}"
-          wx:key="index">
+          wx:for="{{eventsInfo}}"
+          wx:key="{{eventsInfo.id}}">
         <view class="left-info">
-            <image src="{{item.img}}" />
+            <image wx:if="{{item.logo==''}}" src="/images/tournament.png" />
+            <image wx:else="{{item.logo}}" src="{{item.logo}}" />
             <view class="info">
-                <view class="name">{{item.name}}</view>
-                <view class="time">{{item.time}}</view>
+                <view class="name">{{item.title}}</view>
+                <view class="time">{{item.start_time}} - {{item.end_time}}</view>
             </view>
         </view>
         <view class="right-info">
-            <view class="state">{{item.state}}</view>
-            <view class="desc">{{item.desc}}</view>
+            <view wx:if="{{item.status_id=='2'}}" class="status-live">进行中</view>
+            <view wx:elif="{{item.status_id=='1'}}" class="status-wait">未开始</view>
+            <view wx:else="{{item.status_id=='3'}}" class=""></view>
+            <view class="count">{{item.desc}}</view>
         </view>
     </view>
 </view>

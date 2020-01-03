@@ -1,4 +1,9 @@
 // pages/tournament/tournament.js
+var dota2 = require('../../data/dotaevents.js')
+var lol = require('../../data/lolevents.js')
+var csgo = require('../../data/csgoevents.js')
+
+
 Page({
 
   /**
@@ -7,13 +12,20 @@ Page({
   data: {
     tabCate: ['DOTA2','LOL','CS:GO'],
     tagInfo: ['全部赛事','全球性','五大联赛','地区联赛','市区联赛 ','其他赛事'],
-    leagueInfo: [
+    eventsInfo: [
       {
-        name: "S9全球总决赛",
-        time: "01/01-12/31",
-        img:"/images/tournament.png",
-        state: "进行中",
-        desc: "今日1场比赛"
+        id: "",
+        game_id: 1,
+        title: "",
+        start_time: 0,
+        end_time: 0,
+        logo: "/images/tournament.png",
+        thumb: "/images/tournament_banner.png",
+        status_id: 3,
+        price: "",
+        type: 0,
+        location: "",
+        matches_count: 0
       }
     ]
   },
@@ -22,13 +34,32 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      eventsInfo: dota2.eventslist
+    })
   },
 
   jSelectClick(e){
+    // console.log(e)
     const index = e.detail.index
+    switch(index){
+      case  0:
+        this.setData({
+          eventsInfo: dota2.eventslist
+        })
+        break
+      case  1 :
+        this.setData({
+          eventsInfo: lol.eventslist
+        })
+        break
+      case  2 :
+        this.setData({
+          eventsInfo: csgo.eventslist
+        })
+        break  
+    }
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

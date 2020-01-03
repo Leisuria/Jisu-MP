@@ -39,8 +39,10 @@
             flex-direction: column;
             align-items: flex-end;
             justify-content: right;
-            .state{
+            height: 96rpx;
+            .status-live{
                 padding-left: 6rpx;
+                margin-top: 8rpx;
                 color: var(--lightText);
                 width: 84rpx;
                 height: 40rpx;
@@ -50,7 +52,19 @@
                 text-align: center;
                 line-height: 40rpx;
             }
-            .desc{
+            .status-wait{
+                padding-left: 6rpx;
+                margin-top: 8rpx;
+                color: var(--lightText);
+                width: 84rpx;
+                height: 40rpx;
+                font-size: 20rpx;
+                background-color: var(--themeColor);
+                border-radius: 20rpx 0 0 20rpx;
+                text-align: center;
+                line-height: 40rpx;
+            }
+            .count{
                 margin-right: 8rpx;
                 margin-top: 16rpx;
                 font-size: 22rpx;
